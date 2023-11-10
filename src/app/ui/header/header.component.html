@@ -1,0 +1,75 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<nav class="nav">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-white hover:bg-grey focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+          aria-controls="mobile-menu"
+          aria-expanded="true"
+          (click)="toggleNavbar()"
+        >
+        
+          <img
+            class="block lg:hidden h-8 w-auto"
+            src="/assets/icono1.webp"
+            alt="icono"
+          />
+        </button>
+      </div>
+
+      <div
+        class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+      >
+      <div class="flex-shrink-0 flex items-center">
+      
+        <img
+          class="hidden lg:block h-8 w-auto"
+          src="/assets/logo.webp"
+          alt="logo"
+        />
+      </div>
+        <div
+          [class.block]="navbarOpen"
+          [class.hidden]="!navbarOpen"
+          class="sm:block sm:ml-6"
+        >
+        
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+            <a
+              routerLinkActive="active"
+              routerLink="/inicio"
+              class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
+              aria-current="page"
+              >Inicio</a
+            >
+
+            <a
+              routerLink="/mi-historia"
+              class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
+              >Mi historia</a
+            >
+
+            <a
+              routerLinkActive="active"
+              routerLink="/posts"
+              class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
+              >Blog</a
+            >
+
+            <a
+              routerLinkActive="active"
+              routerLink="/contactame"
+              class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
+              >Suscríbete</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

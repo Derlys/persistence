@@ -11,7 +11,6 @@
           aria-expanded="true"
           (click)="toggleNavbar()"
         >
-        
           <img
             class="block lg:hidden h-8 w-auto"
             src="/assets/icono1.webp"
@@ -23,49 +22,40 @@
       <div
         class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
       >
-      <div class="flex-shrink-0 flex items-center">
-      
-        <img
-          class="hidden lg:block h-8 w-auto"
-          src="/assets/logo.webp"
-          alt="logo"
-        />
-      </div>
+        <div class="flex-shrink-0 flex items-center">
+          <img
+            class="hidden lg:block h-8 w-auto"
+            src="/assets/logo.webp"
+            alt="logo"
+          />
+        </div>
         <div
           [class.block]="navbarOpen"
           [class.hidden]="!navbarOpen"
           class="sm:block sm:ml-6"
         >
-        
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
             <a
               routerLinkActive="active"
-              routerLink="/inicio"
+              routerLink="home"
               class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
               aria-current="page"
               >Inicio</a
             >
 
             <a
-              routerLink="/mi-historia"
-              class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
-              >Mi historia</a
-            >
-
-            <a
-              routerLinkActive="active"
-              routerLink="/posts"
+              routerLink="blog"
               class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
               >Blog</a
             >
 
             <a
               routerLinkActive="active"
-              routerLink="/contactame"
+              routerLink="contactame"
               class="hover:bg-sky-800 px-3 py-2 rounded-md text-sm font-medium"
-              >Suscríbete</a
+              >Contactame</a
             >
           </div>
         </div>

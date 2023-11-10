@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayaoutComponent } from './layaout.component';
+import { ContactameComponent } from './contactame.component';
 
-describe('LayaoutComponent', () => {
-  let component: LayaoutComponent;
-  let fixture: ComponentFixture<LayaoutComponent>;
+describe('ContactameComponent', () => {
+  let component: ContactameComponent;
+  let fixture: ComponentFixture<ContactameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LayaoutComponent]
+      imports: [ContactameComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(LayaoutComponent);
+    fixture = TestBed.createComponent(ContactameComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

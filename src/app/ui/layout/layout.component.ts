@@ -5,11 +5,11 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
-  selector: 'app-layaout',
+  selector: 'app-layout',
   standalone: true,
   imports: [CommonModule, HeaderComponent, FooterComponent, RouterOutlet],
-  templateUrl: './layaout.component.html',
-  styleUrl: './layaout.component.css'
+  templateUrl: './layout.component.html',
+  styleUrl: './layout.component.css'
 })
 export class LayaoutComponent {
 
